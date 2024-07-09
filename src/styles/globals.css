@@ -2,32 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fonts */
+@font-face {
+    font-family: "TypeDry";
+    src: url("../assets/jmh_typewriter_dry/JMH\ Typewriter\ dry.otf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../assets/minecraft/Minecraft.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TypoSlab";
+    src: url("../assets/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../assets/helvetica-255/Helvetica.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeyComic";
+    src: url("../assets/hey_comic/Hey\ Comic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../assets/Ubuntu_Sans_Mono/static/UbuntuSansMono-Regular.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    @apply text-green-600 bg-neutral-900;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#home {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(
+            to top,
+            rgb(50, 171, 92),
+            rgb(123, 132, 203)
+        ),
+        url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+.slide-down {
+    animation: slideDown 2s forwards;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        padding-top: -200px;
+        opacity: 0;
+    }
+    to {
+        @apply py-40 lg:pt-48;
+        opacity: 1;
+    }
 }
