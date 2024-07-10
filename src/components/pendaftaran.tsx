@@ -18,6 +18,12 @@ export default function PendaftaranSection() {
                     </button>
                 </Link>
             </div>
+            <h1 className="text-md lg:text-xl text-center text-white font-ubuntu mt-10">
+                Jika ada pertanyaan, kalian bisa hubungi WA:
+            </h1>
+            <h2 className="text-sm lg:text-lg text-center text-white font-ubuntu">
+                081280997703 (Fatih)
+            </h2>
         </section>
     );
 }

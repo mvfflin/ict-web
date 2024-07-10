@@ -6,6 +6,7 @@ import { useState, ChangeEvent, FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import swal from "sweetalert";
+import { ButtonList } from "sweetalert/typings/modules/options/buttons";
 
 // const classOptions = ["X-1", "X-2", "X-3", "X-4", "X-5", "X-6"];
 const divisiOptions = ["Software", "Hardware", "Multimedia", "Robotik"]; // Placeholder options
@@ -80,12 +81,23 @@ function Pendaftaran() {
 
         setIsSubmitting(true);
 
+        // const btnList: ButtonList = []
+
         swal({
             title: "Submitting...",
             text: "Please wait while we submit your form.",
             icon: "info",
             closeOnClickOutside: false,
             closeOnEsc: false,
+            buttons: {
+                confirm: {
+                    text: "OK",
+                    value: false,
+                    visible: false,
+                    className: "",
+                    closeModal: false,
+                },
+            },
         });
 
         try {

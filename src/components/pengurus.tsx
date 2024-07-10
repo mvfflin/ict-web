@@ -92,7 +92,7 @@ export default function PengurusSection() {
             className="h-auto py-40 px-5 lg:px-20 bg-neutral-800 m-0"
         >
             <h1 className="text-3xl lg:text-5xl font-bold font-helvetica mb-10 text-white text-center">
-                Pengurus ICT 2023/2024
+                BPH ICT 2023/2024
             </h1>
             <Swiper
                 // slidesPerView={5}
