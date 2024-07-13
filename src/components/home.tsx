@@ -77,7 +77,7 @@ export default function HomeSection() {
     }, []);
 
     return (
-        <section id="home" className="h-screen px-5 lg:px-20 py-32 lg:py-24">
+        <section id="home" className="min-h-screen px-5 lg:px-20 py-32">
             <div className="w-full mx-auto text-center text-white slide-down">
                 <Image
                     alt="logo"
