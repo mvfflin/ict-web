@@ -9,6 +9,7 @@ export default function HomeSection() {
     let isDeleting = false;
     function type(words: Array<string>, id: string) {
         if (document.getElementById(id)) {
+            document.getElementById(id)!.textContent = "";
             currentWord = words[i];
             // if (isDeleting) {
             //     document.getElementById("typewriter")!.textContent =
@@ -43,6 +44,7 @@ export default function HomeSection() {
     let isDeleting2 = false;
     function type2(words: Array<string>, id: string) {
         if (document.getElementById(id)) {
+            document.getElementById(id)!.textContent = "";
             currentWord2 = words[i];
             // if (isDeleting) {
             //     document.getElementById("typewriter")!.textContent =
@@ -74,10 +76,10 @@ export default function HomeSection() {
     useEffect(() => {
         type(["ICT SMAN 5 Kota Bekasi"], "typewriter");
         type2(["Information, Communication, and Technology"], "typewriter2");
-    }, []);
+    });
 
     return (
-        <section id="home" className="min-h-screen px-5 lg:px-20 py-32">
+        <section id="home" className="min-h-screen px-0 lg:px-20 py-32">
             <div className="w-full mx-auto text-center text-white slide-down">
                 <Image
                     alt="logo"
@@ -99,12 +101,20 @@ export default function HomeSection() {
                 >
                     Information, Communication, and Technology
                 </h2>
-                <Link
-                    href={"#about"}
-                    className="transition-all lg:text-lg lg:hover:text-xl bg-white bg-opacity-0 hover:bg-opacity-100 border-2 border-white hover:text-black text-white py-2 mt-20 px-14"
-                >
-                    See More
-                </Link>
+                <div className="lg:space-x-5 space-y-5 lg:space-y-0 grid grid-rows-1 lg:block w-max mx-auto mt-20">
+                    <Link
+                        href={"#about"}
+                        className="transition-all lg:text-lg lg:hover:text-xl bg-white bg-opacity-0 hover:bg-opacity-100 border-2 border-white hover:text-black text-white py-2 px-14"
+                    >
+                        See More
+                    </Link>
+                    <Link
+                        href={"/daftar"}
+                        className="transition-all lg:text-lg lg:hover:text-xl bg-white bg-opacity-0 hover:bg-opacity-100 border-2 border-white hover:text-black text-white py-2 px-14"
+                    >
+                        Daftar ICT
+                    </Link>
+                </div>
                 {/* <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> */}
             </div>
         </section>

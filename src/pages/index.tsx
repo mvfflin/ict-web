@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <>
             <ParticleComponent />
-            <main className={`h-auto`}>
+            <main className={`h-auto w-auto`}>
                 <HomeSection />
                 <AboutSection />
                 <DivisiSection />
