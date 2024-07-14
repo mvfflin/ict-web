@@ -108,12 +108,11 @@ function Pendaftaran() {
                     position: "top-right",
                 });
 
-                setTimeout(() => {
-                    window.open(
-                        // "https://chat.whatsapp.com/EuAKD4nhcqwAhjG3frP1XF",
-                        "_blank"
-                    );
-                }, 1000);
+                // setTimeout(() => {
+                //     window.open(
+                //         "_blank"
+                //     );
+                // }, 1000);
 
                 swal({
                     title: "Pendaftaran Sukses",
