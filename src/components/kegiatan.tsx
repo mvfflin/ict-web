@@ -52,7 +52,7 @@ export default function KegiatanSection() {
             <h1 className="text-3xl lg:text-5xl font-bold font-helvetica mb-10 text-white">
                 Kegiatan ICT
             </h1>
-            <hr className="w-96" />
+            <hr className="w-auto" />
             <div className="h-auto bg-black mt-8 rounded-md bg-opacity-50 lg:p-32 p-5">
                 <Swiper
                     loop
