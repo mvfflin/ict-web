@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import fatihImage from "@/assets/images/alamak.png";
 import placeholderImage from "@/assets/images/placeholder.png";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
@@ -67,7 +66,7 @@ export default function PengurusSection() {
         {
             nama: "Fatihul Ihsan R.",
             jabatan: "Manager Software",
-            image: fatihImage,
+            image: placeholderImage,
         },
         {
             nama: "Ayudya Lintang",
