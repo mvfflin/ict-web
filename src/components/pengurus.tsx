@@ -97,7 +97,7 @@ export default function PengurusSection() {
                 // slidesPerView={5}
                 breakpoints={{
                     768: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                     },
                 }}
                 spaceBetween={50}
@@ -124,7 +124,7 @@ export default function PengurusSection() {
                                     height={224}
                                     className="w-56 aspect-square rounded-md object-cover mx-auto mb-7"
                                 />
-                                <h1 className="text-xl font-bold font-ubuntu text-center w-max mx-auto">
+                                <h1 className="text-lg lg:text-xl font-bold font-ubuntu text-center w-max mx-auto">
                                     {bph.nama}
                                 </h1>
                                 <h2 className="text-lg font-helvetica w-max mx-auto">
