@@ -108,11 +108,9 @@ function Pendaftaran() {
                     position: "top-right",
                 });
 
-                // setTimeout(() => {
-                //     window.open(
-                //         "_blank"
-                //     );
-                // }, 1000);
+                setTimeout(() => {
+                    window.open(process.env.CHAT_WHATSAPP, "_blank");
+                }, 1000);
 
                 swal({
                     title: "Pendaftaran Sukses",
