@@ -125,9 +125,12 @@ function Pendaftaran() {
                         "formSubmitted=true; path=/; max-age=86400"; // Expires in 1 day
                     router.push("/");
 
-                    // setTimeout(() => {
-                    //   window.open('https://chat.whatsapp.com/EuAKD4nhcqwAhjG3frP1XF', '_blank');
-                    // }, 1000);
+                    setTimeout(() => {
+                        window.open(
+                            process.env.NEXT_PUBLIC_CHAT_WHATSAPP,
+                            "_blank"
+                        );
+                    }, 1000);
                 });
             } else {
                 toast.error("Failed to submit the form!", {
