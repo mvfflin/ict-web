@@ -37,6 +37,9 @@ export default function Pendaftar() {
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 text-center">
                         <tr>
                             <th scope="col" className="px-6 py-3">
+                                No.
+                            </th>
+                            <th scope="col" className="px-6 py-3">
                                 ID
                             </th>
                             <th scope="col" className="px-6 py-3">
@@ -66,6 +69,7 @@ export default function Pendaftar() {
                                     className="bg-white border-b text-center"
                                     key={index}
                                 >
+                                    <td>{index + 1}</td>
                                     <td>{pendaftar.id}</td>
                                     <th
                                         scope="row"
