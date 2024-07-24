@@ -17,6 +17,7 @@ import { CSSProperties, useState } from "react";
 // fotos
 import codingpres from "@/assets/images/codingpresentasi.jpg";
 import keyboardpres from "@/assets/images/keyboardpresentasi.jpg";
+import roadwaycharity from "@/assets/images/roadwaycharity.jpg";
 import Image, { StaticImageData } from "next/image";
 
 export default function KegiatanSection() {
@@ -24,22 +25,22 @@ export default function KegiatanSection() {
 
     const kegiatans: Array<{
         judul: string;
-        description: string;
+        description?: string;
         image: StaticImageData;
     }> = [
         {
             judul: "Belajar web development",
-            description: "lorem100asd",
+            // description: "lorem100asd",
             image: codingpres,
         },
         {
             judul: "Roadway Charity ICT x JC",
-            description: "lorem1000asdiyadia",
-            image: codingpres,
+            // description: "lorem1000asdiyadia",
+            image: roadwaycharity,
         },
         {
             judul: "Belajar hardware",
-            description: "lorem123713suyc",
+            // description: "lorem123713suyc",
             image: keyboardpres,
         },
     ];

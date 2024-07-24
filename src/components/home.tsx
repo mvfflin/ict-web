@@ -73,10 +73,10 @@ export default function HomeSection() {
         }
     }
 
-    useEffect(() => {
-        type(["ICT SMAN 5 Kota Bekasi"], "typewriter");
-        type2(["Information, Communication, and Technology"], "typewriter2");
-    });
+    // useEffect(() => {
+    //     type(["ICT SMAN 5 Kota Bekasi"], "typewriter");
+    //     type2(["Information, Communication, and Technology"], "typewriter2");
+    // });
 
     return (
         <section id="home" className="min-h-screen px-0 lg:px-20 py-32">
