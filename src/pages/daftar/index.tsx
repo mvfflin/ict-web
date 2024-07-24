@@ -109,7 +109,10 @@ function Pendaftaran() {
                 });
 
                 setTimeout(() => {
-                    window.open(process.env.CHAT_WHATSAPP, "_blank");
+                    window.open(
+                        process.env.NEXT_PUBLIC_CHAT_WHATSAPP,
+                        "_blank"
+                    );
                 }, 1000);
 
                 swal({
